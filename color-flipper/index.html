@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            border: 1px solid black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #btn {
+            font-size: 30px;
+            width: 200px;
+            padding: 8px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            border: 2px solid grey;
+            border-radius: 50%;
+        }
+
+        #paragraph {
+            text-align: center;
+            position: absolute;
+            left: 40%;
+            top: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="btn" onclick="myButton()">Click Me</button>
+        <p id="paragraph"></p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
